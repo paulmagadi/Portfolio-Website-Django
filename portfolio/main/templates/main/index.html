@@ -9,24 +9,26 @@
         * {
             margin: 0;
             padding: 0;
+            background-color: white;
         }
 
         :root {
-            --main: orange;
-            --background_color: black;
-            --container-padding: 2em;
+            --text-color: rgb(18, 17, 16);
+            --background_color: rgb(220, 246, 240);
+            --container-padding: 1em;
 
         }
         .container {
-            background-color: var(--background_color);
-            color: var(--main);
+            /* background-color: var(--background_color); */
+            color: var(--text-color);
             min-height: 100vh;
-            padding-left: var(--container-padding);
-            padding-right: var(--container-padding);
+            margin-left: var(--container-padding);
+            margin-right: var(--container-padding);
         }
 
         nav {
-            padding-top: 1em;
+            background-color: white;
+            padding: var(--container-padding);
         }
 
         nav ul{
@@ -36,8 +38,9 @@
         }
 
         nav a {
-            color: var(--main);
+            color: var(--text-color);
             text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             
         }
     </style>

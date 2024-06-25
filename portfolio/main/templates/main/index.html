@@ -13,10 +13,32 @@
 
         :root {
             --main: orange;
+            --background_color: black;
+            --container-padding: 2em;
+
         }
         .container {
-            background-color: var(--main);
-            color: orange;
+            background-color: var(--background_color);
+            color: var(--main);
+            min-height: 100vh;
+            padding-left: var(--container-padding);
+            padding-right: var(--container-padding);
+        }
+
+        nav {
+            padding-top: 1em;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--main);
+            text-decoration: none;
+            
         }
     </style>
 </head>
